@@ -4,8 +4,8 @@ var pipeline = require('readable-stream').pipeline;
  
 gulp.task('compress', function () {
   return pipeline(
-        gulp.src('./*.js'),
+        gulp.src('src/*.js'),
         uglify(),
-        gulp.dest('./')
+        gulp.dest('dist/')
   );
 });
