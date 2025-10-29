@@ -1,0 +1,11 @@
+{
+  "name": "video_loader",
+  "version": "1.0.0",
+  "description": "Video loader that saves video to IndexDB or fetches video from network",
+  "main": "video-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua McKendall",
+  "license": "ISC"
+}
