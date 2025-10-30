@@ -52,8 +52,7 @@
           file = src.split('/').pop();
       videos.push( {
         src: src,
-        name: file,
-        type: 'mp4'
+        name: file
       } );
     }
   }
@@ -80,7 +79,7 @@
     const videoURL = URL.createObjectURL( videoBlob );
     const sourceElement = document.createElement('source');
     sourceElement.src = videoURL;
-    sourceElement.type = 'video/mp4';
+    sourceElement.type = 'video/' + name.split('.').pop();
 
     const videoElement = document.querySelectorAll('[data-src="'+ src +'"]');
     videoElement[0].appendChild(sourceElement);
