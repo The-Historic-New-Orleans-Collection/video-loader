@@ -39,7 +39,6 @@
 
     // Only run the next code when both promises have fulfilled
     Promise.all([videoBlob]).then( values => {
-      console.log( 'BLOB:', values[0] );
       // display the video fetched from the network with displayVideo()
       displayVideo( values[0], video.name, video.src );
       // store it in the IDB using storeVideo()
